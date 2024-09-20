@@ -77,5 +77,5 @@ chmod +x run.sh
 ```
 * After ensuring you are in the main directory, you can run the file by executing
 ```
-./https_server/python3 server.py
+python3 /https_server/ server.py
 ```

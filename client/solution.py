@@ -1,5 +1,5 @@
 
-from Networks_Hackathon.client.split_lib import *
+from split_lib import *
 import os
 import filecmp
 
@@ -7,7 +7,7 @@ test_file = "test.txt"
 tmp_folder = "tmp"
 addr = "./client"
 debug = False
-#split_store(test_file)
+split_store(test_file)
 
 if not os.path.exists(os.path.join(addr,tmp_folder)):
     os.makedirs(os.path.join(addr,tmp_folder))
@@ -21,7 +21,7 @@ else:
     if(debug):
         print(os.path.join(addr,"mem",test_file))
 
-#split_fetch(test_file)
+split_fetch(test_file)
 
 
 
